@@ -10,6 +10,7 @@ If you have any questions concerning the files in this repository, please contac
 Remote host setup
 =================
 git clone https://github.com/jchoyt/scripts.git
+
 ln -s scripts/remote/bin                                                                                                                                                                              
 mv .bashrc .bashrc.orig                                                                                                                                                                               
 ln -s scripts/remote/.bashrc   
