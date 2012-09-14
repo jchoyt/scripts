@@ -15,3 +15,11 @@ ln -s scripts/remote/bin
 mv .bashrc .bashrc.orig                                                                                                                                                                               
 ln -s scripts/remote/.bashrc   
 ln -s scripts/remote/.gitconfig
+
+Keeping them in sync
+--------------------
+To keep the scripts up to date, pull new code once a day using cron:
+
+crontab -e
+#append the following to pull a new version at 3am (not tested yet):
+0 3 * * * cd /home/jchoyt/scripts && git pull
