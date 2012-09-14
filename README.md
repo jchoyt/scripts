@@ -9,17 +9,21 @@ If you have any questions concerning the files in this repository, please contac
 
 Remote host setup
 =================
+```
 git clone https://github.com/jchoyt/scripts.git
 
 ln -s scripts/remote/bin                                                                                                                                                                              
 mv .bashrc .bashrc.orig                                                                                                                                                                               
 ln -s scripts/remote/.bashrc   
 ln -s scripts/remote/.gitconfig
-
-Keeping them in sync
---------------------
+```
+### Keeping them in sync
 To keep the scripts up to date, pull new code once a day using cron:
 
+```
 crontab -e
-#append the following to pull a new version at 3am (not tested yet):
+```
+append the following to pull a new version at 3am (not tested yet):
+```
 0 3 * * * cd /home/jchoyt/scripts && git pull
+```
