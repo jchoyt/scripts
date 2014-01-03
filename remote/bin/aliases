@@ -2,6 +2,8 @@
 # Define a few aliases
 #######################################################
 alias ls='ls --color=auto'
+alias lrt='ls --color=auto -lrt'
+alias ll='ls -l'
 alias grep='grep --color=auto'
 alias gh='history | grep'
 alias gp='ps ax | grep'
@@ -10,12 +12,12 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 alias clr='. ~/bin/welcome'
-alias ls='ls --color'
-alias ll='ls -l'
 alias hog='top -bn1 | head -17'
 alias vi=vim
 alias tail='tail -n 100'
-alias devkonsole="konsole --tabs-from-file ~/devel/invasion/konsole.tabs.conf --workdir ~/devel/invasion"
+alias gs="git status"
+
+alias ports='netstat -tulanp'
 
 # NOTES
 #######################################################
