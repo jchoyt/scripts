@@ -68,3 +68,6 @@ export HISTFILESIZE=1500
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
+
+#so as not to be disturbed by Ctrl-S ctrl-Q in terminals:
+stty -ixon
