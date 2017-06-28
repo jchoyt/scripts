@@ -86,3 +86,6 @@ export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
+
+#so as not to be disturbed by Ctrl-S ctrl-Q in terminals:
+stty -ixon
