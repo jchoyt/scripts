@@ -1,5 +1,5 @@
 [user]
 	name = Jeffrey C. Hoyt
-	email = jchoyt@khresear.ch
+	email = jchoyt@gmail.com
 [alias]
 	lol = log --graph --all --date-order --pretty=tformat:'%x09%cr%x09%C(yellow)%h%C(green)%d%Creset %s'
