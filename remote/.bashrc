@@ -60,6 +60,24 @@ shopt -s histappend
 export HISTSIZE=1500
 export HISTFILESIZE=1500
 
+
+
+#######################################
+# set options for less
+#######################################
+export LESS='--quit-if-one-screen --ignore-case --status-column --LONG-PROMPT --RAW-CONTROL-CHARS --HILITE-UNREAD --tabs=4 --no-init --window=-4'
+# or the short version
+# export LESS='-F -i -J -M -R -W -x4 -X -z-4'
+
+# Set colors for less. Borrowed from https://wiki.archlinux.org/index.php/Color_output_in_console#less .
+export LESS_TERMCAP_mb=$'\E[1;31m'     # begin bold
+export LESS_TERMCAP_md=$'\E[1;36m'     # begin blink
+export LESS_TERMCAP_me=$'\E[0m'        # reset bold/blink
+export LESS_TERMCAP_so=$'\E[01;44;33m' # begin reverse video
+export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
+export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
+export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
+
 #######################################
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -68,3 +86,6 @@ export HISTFILESIZE=1500
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
+
+#so as not to be disturbed by Ctrl-S ctrl-Q in terminals:
+stty -ixon
