@@ -1,5 +1,7 @@
 [user]
 	name = Jeffrey C. Hoyt
-	email = jchoyt@gmail.com
+	email = jchoyt@mitre.org
 [alias]
-	lol = log --graph --all --date-order --pretty=tformat:'%x09%cr%x09%C(yellow)%h%C(green)%d%Creset %s'
+	lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+
