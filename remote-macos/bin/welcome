@@ -1,0 +1,12 @@
+clear
+echo -e ${COLOR_LIGHTBLUE}`cat /proc/version` ;
+# echo -e "Kernel: " `uname -smr`;
+echo -e ${COLOR_LIGHTBLUE}`bash --version`;echo ""
+date
+echo -e "${COLOR_YELLOW}"; cal ;
+echo -e ${COLOR_LIGHTBLUE}Mounted file systems:
+df -hT
+#echo ; echo -e ${COLOR_YELLOW}`acpi`
+echo -e ${COLOR_DEFAULT}
+
+# :mode=shellscript:
