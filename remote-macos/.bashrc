@@ -21,8 +21,8 @@ shopt -s checkwinsize
 #######################################################
 PROMPT_COMMAND=_ps1_prep
 
-export JAVA_HOME=/usr/local/java
-export PATH=$HOME/bin:$JAVA_HOME/bin:$PATH
+#export JAVA_HOME=/usr/local/java
+export PATH=$HOME/bin:$PATH
 export USERNAME='Jeffrey C. Hoyt'
 
 # CDPATH  does for the cd built-in what PATH does for executables.  'cd mrald/mrald' from anywhere would take me to /home/jchoyt/devel/mrald/mrald
@@ -91,4 +91,5 @@ fi
 stty -ixon
 
 # tweak colors for ls
+export CLICOLOR=1
 export LSCOLORS='gxfxcxdxbxegedabagacad'

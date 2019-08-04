@@ -43,10 +43,10 @@ function _ps1_prep() {
 	# Opening bracket
 	PS1="["
 
-	# set color by host - naria green, all else yellow
-	if [ "$HOSTNAME" = "naria" ];
+	# set color by host - gertrude green, all else yellow
+	if [ "$HOSTNAME" = "lois.local" ];
 	then
-	    PS1=${PS1}${COLOR_GRN}"\u@\h "${COLOR_DEF}
+	    PS1=${PS1}${COLOR_ONG}"\u@\h "${COLOR_DEF}
     else
         PS1=${PS1}${COLOR_ONG}"\u@\h "${COLOR_DEF}
     fi
