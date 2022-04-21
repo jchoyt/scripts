@@ -1,8 +1,8 @@
 #######################################################
 # Define a few aliases
 #######################################################
-alias ls='ls --color=auto'
-alias lrt='ls --color=auto -lrt'
+alias ls='ls -G'
+alias lrt='ls -Glrt'
 alias ll='ls -l'
 alias grep='grep --color=auto'
 alias gh='history | grep'
@@ -16,6 +16,7 @@ alias hog='top -bn1 | head -17'
 alias vi=vim
 alias tail='tail -n 100'
 alias gs="git status"
+alias cam='python camo.py'
 
 alias ports='netstat -tulanp'
 

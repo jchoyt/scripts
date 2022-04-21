@@ -44,7 +44,7 @@ function _ps1_prep() {
 	PS1="["
 
 	# set color by host - naria green, all else yellow
-	if [ "$HOSTNAME" = "naria" ];
+	if [ "$HOSTNAME" = "MM246729-PC" ];
 	then
 	    PS1=${PS1}${COLOR_GRN}"\u@\h "${COLOR_DEF}
     else
