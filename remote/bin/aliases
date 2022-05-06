@@ -11,10 +11,9 @@ alias dus='du -sk * | sort -n'
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
-alias clr='. ~/bin/welcome'
 alias hog='top -bn1 | head -17'
-alias vi=vim
-alias tail='tail -n 100'
+#alias vi=vim
+#alias tail='tail -n 100'
 alias gs="git status"
 
 alias ports='netstat -tulanp'
