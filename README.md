@@ -13,8 +13,8 @@ Remote host setup
 git clone https://github.com/jchoyt/scripts.git
 
 ln -s scripts/remote/bin                                                                                                                                                                              
-mv .bashrc .bashrc.orig                                                                                                                                                                               
-ln -s scripts/remote/.bashrc   
+mv .zshrc .zshrc.orig                                                                                                                                                                               
+ln -s scripts/remote/.zshrc   
 ln -s scripts/remote/.gitconfig
 ```
 ### Keeping them in sync
