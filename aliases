@@ -1,9 +1,9 @@
 #######################################################
 # Define a few aliases
 #######################################################
-alias ls='ls -G'
-alias lrt='ls -Glrt'
-alias ll='ls -Gl'
+alias ls='ls --color=auto'
+alias lrt='ls --color=auto -lrt'
+alias ll='ls -l'
 alias grep='grep --color=auto'
 alias gh='history | grep'
 alias gp='ps ax | grep'
@@ -15,10 +15,17 @@ alias clr='. ~/bin/welcome'
 alias hog='top -bn1 | head -17'
 alias vi=vim
 alias tail='tail -n 100'
+alias devkonsole="konsole --tabs-from-file ~/devel/invasion/konsole.tabs.conf --workdir ~/devel/invasion"
 alias gs="git status"
+
+alias go='cd ~/devel/invasion'
+alias gt='cd ~/devel/tomcat'
+alias gw='cd ~/devel/tomcat/webapps'
+alias gl='cd ~/devel/tomcat/logs'
 
 alias ports='netstat -tulanp'
 
+alias lpsmall='lp -d bw -o landscape -o cpi=13 -o lpi=8'
 # NOTES
 #######################################################
 # To temporarily bypass an alias, we preceed the command with a \ 

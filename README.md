@@ -12,10 +12,10 @@ Remote host setup
 ```
 git clone https://github.com/jchoyt/scripts.git
 
-ln -s scripts/remote/bin                                                                                                                                                                              
+ln -s scripts bin                                                                                                                                                                              
 mv .bashrc .bashrc.orig                                                                                                                                                                               
-ln -s scripts/remote/.bashrc   
-ln -s scripts/remote/.gitconfig
+ln -s scripts/.bashrc   
+ln -s scripts/.gitconfig
 ```
 ### Keeping them in sync
 To keep the scripts up to date, pull new code once a day using cron:
